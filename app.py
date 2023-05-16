@@ -4,7 +4,7 @@ This is a Flask application that greets WSB.
 
 from flask import Flask
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -13,5 +13,5 @@ def index():
     """
     return '<h1>Hello WSB! Greetings from Flask!</h1>'
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True)
